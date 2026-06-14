@@ -9,13 +9,12 @@ const HeroSection = () => {
       <div className="hero-content">
         <div className="hero-text">
           <h1 className="hero-title">
-            Crafting <span className="gradient-text">Scalable</span> <br />
-            & Intuitive Digital <br />
-            Experiences.
+            <span className="gradient-text">Sainath Gulari</span> <br />
+            Engineering Leader.
           </h1>
           <p className="hero-subtitle">
-            I build modern web applications and automated systems with cutting-edge tech.
-            Specializing in robust React, Node.js, and algorithmic trading architectures.
+            10+ years of experience leading mission-critical fintech systems at scale (55M+ accounts, 10k+ TPS). 
+            Specializing in cloud-native modernization, real-time architectures, and building AI-ready teams.
           </p>
           
           <div className="hero-actions">

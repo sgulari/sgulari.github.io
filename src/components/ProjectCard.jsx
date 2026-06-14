@@ -17,7 +17,7 @@ const ProjectCard = ({ title, description, tags, image, link }) => {
           ))}
         </div>
         <a href={link} className="project-link" target="_blank" rel="noreferrer">
-          View Project <ArrowRight size={16} />
+          Learn More <ArrowRight size={16} />
         </a>
       </div>
     </div>
