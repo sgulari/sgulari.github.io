@@ -22,13 +22,13 @@ const HeroSection = () => {
               <Download size={20} />
               Download Resume
             </a>
-            <a href="https://github.com/sgulari" target="_blank" rel="noreferrer" className="btn-secondary">
+            <a href="https://github.com/saigoud1000?tab=repositories" target="_blank" rel="noreferrer" className="btn-secondary">
               <FaGithub size={20} />
-              GitHub
+              <span>GitHub</span>
             </a>
-            <a href="https://linkedin.com/in/sgulari" target="_blank" rel="noreferrer" className="btn-secondary">
+            <a href="https://www.linkedin.com/in/sainathgulari/" target="_blank" rel="noreferrer" className="btn-secondary">
               <FaLinkedin size={20} />
-              LinkedIn
+              <span>LinkedIn</span>
             </a>
           </div>
         </div>
