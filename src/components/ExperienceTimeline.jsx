@@ -6,12 +6,14 @@ const experiences = [
   {
     role: "Manager, Software Engineering",
     company: "Capital One",
-    date: "Aug 2022 – Present",
+    date: "Aug 2022 – Present | Wilmington, DE",
     details: [
-      "Scaled engineering squad and managed delivery for 8+ engineers building 10k TPS platforms.",
-      "Orchestrated cloud migration strategy across 20+ teams (zero-downtime cutover).",
-      "Modernized banking core serving 55M+ retail accounts from batch to real-time events, cutting latency by 98%.",
-      "Spearheaded the development of custom Claude AI capabilities for the team, automating technical support and driving operational efficiency for over 1,000+ internal users."
+      "Scaled the engineering squad through strategic recruiting and managed delivery for 8+ engineers building highly available 10k TPS platforms. Successfully coached an underperformer from PIP to promotion.",
+      "Spearheaded the development of custom Claude AI capabilities for the team, automating technical support and driving operational efficiency for over 1,000+ internal users.",
+      "Orchestrated cloud migration strategy, coordinating dependency alignment across 20+ product teams and 100+ internal clients, resulting in zero-downtime cutover for 10k TPS systems.",
+      "Modernized banking core serving 55M+ retail accounts from batch to real-time events, cutting latency by 98% (3hrs → <3mins) to transform the customer experience.",
+      "Spearheaded a cloud cost optimization initiative, re-architecting ECS and Lambda workloads to achieve 30% monthly AWS cost savings ($30k/month).",
+      "Partnered with vendors like AWS and New Relic to resolve critical and complex production bottlenecks and validate architectural strategies."
     ]
   },
   {
