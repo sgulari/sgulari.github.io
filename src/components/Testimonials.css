@@ -1,0 +1,30 @@
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+.testimonial-card {
+  position: relative;
+  padding: 2rem;
+  text-align: left;
+}
+.quote-icon {
+  color: rgba(0, 255, 136, 0.2);
+  margin-bottom: 1rem;
+}
+.testimonial-quote {
+  font-size: 1.1rem;
+  font-style: italic;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+.testimonial-author h4 {
+  color: #fff;
+  margin: 0 0 0.25rem 0;
+}
+.testimonial-author p {
+  color: var(--primary);
+  margin: 0;
+  font-size: 0.9rem;
+}

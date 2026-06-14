@@ -1,0 +1,19 @@
+.contact-section {
+  padding: 4rem 0;
+  display: flex;
+  justify-content: center;
+}
+.contact-card {
+  max-width: 600px;
+  text-align: center;
+  padding: 3rem;
+}
+.contact-subtitle {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+.contact-actions {
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,59 @@
+.github-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+.repo-card {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s, border-color 0.2s;
+  text-align: left;
+}
+.repo-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--primary);
+}
+.repo-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+.repo-header h3 {
+  color: #fff;
+  font-size: 1.2rem;
+  margin: 0;
+}
+.repo-icon {
+  color: var(--primary);
+}
+.repo-desc {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+.repo-stats {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+}
+.repo-stat {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+.repo-lang {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+.lang-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--primary);
+}
