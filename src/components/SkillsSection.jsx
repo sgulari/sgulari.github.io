@@ -3,32 +3,44 @@ import './SkillsSection.css';
 
 const skillCategories = [
   {
-    title: "Frontend",
-    skills: ["React", "TypeScript", "Vite", "Tailwind CSS", "Vanilla CSS"]
+    title: 'Languages',
+    skills: ['Java', 'Python', 'NodeJS', 'Go', 'JavaScript'],
   },
   {
-    title: "Backend",
-    skills: ["Node.js", "Python", "PostgreSQL", "REST APIs", "WebSockets"]
+    title: 'Frameworks & APIs',
+    skills: ['Spring Boot', 'REST', 'Angular', 'HTML/CSS'],
   },
   {
-    title: "DevOps & Cloud",
-    skills: ["AWS S3", "EC2", "Docker", "GitHub Actions", "Vercel"]
-  }
+    title: 'AI & Automation',
+    skills: ['GitHub Copilot', 'Claude', 'MCP (Model Context Protocol)'],
+  },
+  {
+    title: 'AWS Cloud',
+    skills: ['ECS', 'EC2', 'Lambda', 'CloudFormation', 'MQ', 'Batch', 'EventBridge', 'DynamoDB', 'Route53', 'ALB', 'ASG', 'CloudWatch'],
+  },
+  {
+    title: 'Data & Messaging',
+    skills: ['Snowflake', 'Databricks', 'Kafka', 'AmazonMQ'],
+  },
+  {
+    title: 'DevOps & Monitoring',
+    skills: ['Docker', 'Jenkins', 'New Relic', 'Splunk', 'GitHub Actions'],
+  },
 ];
 
 const SkillsSection = () => {
   return (
-    <section className="skills-section container">
-      <h2 className="section-title">Technical Skills</h2>
+    <section className="skills-section container" id="skills">
+      <h2 className="section-title">Technologies</h2>
       <div className="skills-grid">
         {skillCategories.map((category, idx) => (
           <div key={idx} className="skill-category">
             <h3 className="category-title">{category.title}</h3>
-            <ul className="skill-list">
+            <div className="skill-tags">
               {category.skills.map((skill, sIdx) => (
-                <li key={sIdx} className="skill-item">{skill}</li>
+                <span key={sIdx} className="skill-tag">{skill}</span>
               ))}
-            </ul>
+            </div>
           </div>
         ))}
       </div>

@@ -9,13 +9,23 @@
   --accent-cyan: #06b6d4;
   --accent-purple: #8b5cf6;
   --accent-glow: rgba(139, 92, 246, 0.4);
+  --accent-green: #10b981;
+  --accent-amber: #f59e0b;
   --border-color: rgba(255, 255, 255, 0.08);
+  --glass-bg: rgba(26, 31, 46, 0.6);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --nav-height: 70px;
 }
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--nav-height);
 }
 
 body {
@@ -44,6 +54,27 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
+}
+
+/* Section common styles */
+.section-title {
+  font-size: 2.25rem;
+  margin-bottom: 3rem;
+  letter-spacing: -0.01em;
+  color: var(--text-primary);
+  display: inline-block;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent-purple), var(--accent-cyan));
+  border-radius: 2px;
 }
 
 /* Buttons */
@@ -89,13 +120,14 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Glowing background effect */
 .glow-bg {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100vh;
   overflow: hidden;
   z-index: -1;
+  pointer-events: none;
 }
 
 .glow-bg::before,
@@ -106,7 +138,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 600px;
   border-radius: 50%;
   filter: blur(100px);
-  opacity: 0.15;
+  opacity: 0.12;
 }
 
 .glow-bg::before {
@@ -118,5 +150,39 @@ h1, h2, h3, h4, h5, h6 {
 .glow-bg::after {
   bottom: -200px;
   right: -200px;
+  background: var(--accent-purple);
+}
+
+/* Fade-in animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--surface-hover);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
   background: var(--accent-purple);
 }
